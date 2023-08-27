@@ -1,0 +1,13 @@
+body
+{
+    background-color: bisque;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;      
+}
+.element{
+    margin-bottom: 5px;
+}

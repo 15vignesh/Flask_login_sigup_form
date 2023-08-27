@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Registration Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+<div class="container">
+    <h2>Register</h2>
+    <hr>
+	<form action="{{url_for('register')}}" method="post">
+        <table align="center">
+            <tr>
+                <td><label for="uname"><strong>Username</strong></label></td>
+                <td><input type="text" name="uname" placeholder="Enter Username"></td>
+            </tr>
+            <tr>
+                <td><label for="Email"><strong>Email</strong></label></td>
+                <td><input type="email" name="email" placeholder="Enter your mail"></td>
+            </tr>
+            <tr>
+                <td><label for="pwd"><strong>Password</strong></label></td>
+                <td><input type="password" name="pwd" placeholder="Enter your password"></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <input type="submit" value="Register">
+        <h4 align="center" class="error">{{msg}}</h4>
+        <h4 align="center">Already Registered ?</h4>
+        <h4 align="center"><a href="{{url_for('login')}}"><u>Login</u></a></h4>
+	</form>
+</div>	
+</body>
+</html>

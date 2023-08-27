@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block y %}
+    <div class="container">
+        <div class="element"><strong>Username:</strong>{{session.username}}</div>
+        <div class="element"><a text-decoration="none" href="{{url_for('logout')}}">Logout</a></div>
+    </div>
+    <h1 align="center">Welcome to site it is in build mode</h1>
+{% endblock %}
